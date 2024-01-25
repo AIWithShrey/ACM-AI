@@ -1,35 +1,26 @@
-// Define the logo
-var logo = $('<img>', { 
+var logo = $('<a>', {
+    href: 'https://aiwithshrey.github.io',
+    target: '_blank'
+}).append($('<img>', { 
     id: 'logo',
-    src: 'assets/Logo.png', // replace with the correct path to your logo
+    src: 'assets/Logo.png',
     alt: 'Site Logo',
-    href: "https://aiwithshrey.github.io"
-});
+    width: '100px',
+    height: '100px',
+    css: {
+        position: 'fixed',
+        top: '10px',
+        right: '600px',
+        transition: 'transform 0.3s ease' // Smooth transition for the transform property
+    }
+})).appendTo('body'); // Assuming you want to append it to the body
 
-// Define the link
-var link = $('<a>', {
-    href: 'https://aiwithshrey.github.io'
-});
-
-// Append the logo to the link
-link.append(logo);
-
-logo.css({
-    'width': '150px', // reduce the width
-    'height': '150px', // reduce the height
-    'position': 'fixed', // keep the position as fixed
-    'top': '10px', // position at the top
-    'right': '10px' // position at the right
-});
-
-logo.hover(
-    function() {
-        $(this).css('transform', 'scale(1.2)');
-    },
-    function() {
-        $(this).css('transform', 'scale(1)');
+// jQuery to handle the hover effect
+$('#logo').hover(
+    function() { // Mouse over
+        $(this).css('transform', 'scale(1.2)'); // Scale up the logo
+    }, 
+    function() { // Mouse out
+        $(this).css('transform', 'scale(1)'); // Scale back to normal
     }
 );
-
-// Append the logo to the body
-$('body').append(logo);

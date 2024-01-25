@@ -1,4 +1,6 @@
-h1{
-    color: blue;
-
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 'default';
+    text-align: center;
+    font-size: 50px;
 }
