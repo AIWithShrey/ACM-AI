@@ -6,9 +6,17 @@ var logo = $('<img>', {
     href: "https://aiwithshrey.github.io"
 });
 
+// Define the link
+var link = $('<a>', {
+    href: 'https://aiwithshrey.github.io'
+});
+
+// Append the logo to the link
+link.append(logo);
+
 logo.css({
-    'width': '50px', // reduce the width
-    'height': '50px', // reduce the height
+    'width': '150px', // reduce the width
+    'height': '150px', // reduce the height
     'position': 'fixed', // keep the position as fixed
     'top': '10px', // position at the top
     'right': '10px' // position at the right
