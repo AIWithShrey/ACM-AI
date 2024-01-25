@@ -7,12 +7,13 @@ var logo = $('<img>', {
 });
 
 logo.css({
-    'width': '100px', // reduce the width
-    'height': '100px', // add a height
-    'position': 'fixed', // change the position to fixed
-    'top': '10', // position at the top
-    'left': '10' // position at the left
+    'width': '50px', // reduce the width
+    'height': '50px', // reduce the height
+    'position': 'fixed', // keep the position as fixed
+    'top': '10px', // position at the top
+    'right': '10px' // position at the right
 });
+
 logo.hover(
     function() {
         $(this).css('transform', 'scale(1.2)');
@@ -24,4 +25,3 @@ logo.hover(
 
 // Append the logo to the body
 $('body').append(logo);
-
