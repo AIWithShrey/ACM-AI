@@ -8,7 +8,8 @@ $(document).ready(function() {
         
     });
     logo.css({
-        'width': '150px', // change the width to the appropriate size
+        'width': '100px', // reduce the width
+        'height': '100px', // add a height
         'position': 'fixed', // change the position to fixed
         'top': '0', // position at the top
         'left': '0' // position at the left
