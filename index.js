@@ -7,11 +7,11 @@ var logo = $('<img>', {
 });
 
 logo.css({
-    'width': '1px', // reduce the width
-    'height': '1px', // add a height
+    'width': '100px', // reduce the width
+    'height': '100px', // add a height
     'position': 'fixed', // change the position to fixed
-    'top': '0', // position at the top
-    'left': '0' // position at the left
+    'top': '10', // position at the top
+    'left': '10' // position at the left
 });
 logo.hover(
     function() {
