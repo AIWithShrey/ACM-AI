@@ -2,10 +2,9 @@ $(document).ready(function() {
     // Define the logo
     var logo = $('<img>', { 
         id: 'logo',
-        src: 'assets/Logo.jpg', // replace with the correct path to your logo
+        src: 'assets/Logo.png', // replace with the correct path to your logo
         alt: 'Site Logo',
         href: "https://aiwithshrey.github.io"
-
     });
     logo.hover(
         function() {
@@ -19,7 +18,5 @@ $(document).ready(function() {
     // Append the logo to the body
     $('body').append(logo);
 });
-// Append the logo to the body
-$('body').append(logo);
 
     
