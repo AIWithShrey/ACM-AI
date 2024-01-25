@@ -5,6 +5,13 @@ $(document).ready(function() {
         src: 'assets/Logo.png', // replace with the correct path to your logo
         alt: 'Site Logo',
         href: "https://aiwithshrey.github.io"
+        
+    });
+    logo.css({
+        'width': '150px', // change the width to the appropriate size
+        'position': 'fixed', // change the position to fixed
+        'top': '0', // position at the top
+        'left': '0' // position at the left
     });
     logo.hover(
         function() {
